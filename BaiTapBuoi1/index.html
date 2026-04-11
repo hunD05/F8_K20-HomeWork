@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaiTapBuoi1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="content-1">
+      <h1>
+        ES2025 JavaScript: Patterns và Libraries Hot Nhất Cho Developer Việt
+        2026
+      </h1>
+      <h2>ES2025 ra mắt - cái gì thật sự vào spec?</h2>
+      <p>
+        Tháng 6/2025, TC39 chính thức công bố ECMAScript 2025 (ES16). Nếu bạn
+        hay follow Twitter/X dev community, chắc nghe nhiều về pipeline operator
+        hay Temporal API - nhưng cả hai vẫn chưa vào spec. Đừng để bị nhầm.
+      </p>
+      <p>Cái <strong>thật sự</strong> vào ES2025 gồm 6 nhóm tính năng:</p>
+      <ul>
+        <li>
+          <strong>Iterator Helpers</strong> - global Iterator object với map,
+          filter, take, drop
+        </li>
+        <li>
+          <strong>Set Methods</strong> - union(), intersection(), difference(),
+          symmetricDifference()
+        </li>
+        <li>
+          <strong>Promise.try()</strong> - bắt cả sync lẫn async errors trong
+          một chain
+        </li>
+        <li>
+          <strong>RegExp improvements</strong> - flag /v, RegExp.escape(),
+          duplicate named groups
+        </li>
+        <li>
+          <strong>Import Attributes</strong> - import data from "./data.json"
+          with { type: "json" }
+        </li>
+        <li>
+          <strong>Float16Array</strong> - typed array 16-bit cho
+          memory-sensitive workloads
+        </li>
+      </ul>
+      <p>
+        <img
+          src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_0_260323080636_69c0921c0cf292.71514803.png"
+          alt="anh"
+        />
+        <br />
+        <em
+          >ES2025 tập trung vào iterator, set, và async - không phải pipeline
+          operator như nhiều bài viết nhầm</em
+        >
+      </p>
+      <p>
+        Node.js 22+ và các browser Chrome/Firefox/Safari release sau tháng
+        6/2025 đã support native. Không cần polyfill cho production nếu bạn
+        target môi trường đủ mới.
+      </p>
+      <p>
+        Pipeline operator (<code>|></code>) và Temporal API? Vẫn đang ở Stage
+        2-3. Dùng Luxon hoặc date-fns cho date/time là lựa chọn thực tế nhất
+        hiện tại.
+      </p>
+    </div>
+    <hr />
+    <div class="content-2">
+      <h2>Iterator Helpers và Set Methods - dùng thật trong dự án thế nào?</h2>
+      <p>
+        Hai tính năng này mình thấy practical nhất trong ES2025 cho daily work.
+      </p>
+      <p>
+        <strong>Iterator Helpers</strong> giải quyết bài toán bạn từng phải
+        import lodash chỉ để map + filter + slice một mảng lớn. Bây giờ không
+        cần nữa:
+      </p>
+      <div class="tool">
+        <pre>
+                // Trước ES2025 - load cả mảng vào memory
+                const result = apiData
+                .filter(item => item.active)
+                .map(item => item.name)
+                .slice(0, 100);
+
+                // ES2025 - lazy evaluation, chỉ xử lý đến khi đủ 100 item
+                const result = Iterator.from(apiData)
+                .filter(item => item.active)
+                .map(item => item.name)
+                .take(100)
+                .toArray();
+            </pre
+        >
+        <button>Copy</button>
+      </div>
+      <p>
+        Khác biệt quan trọng: Iterator.from() <strong>lazy</strong> - với mảng
+        10.000 item nhưng chỉ cần 100 kết quả đầu, nó không xử lý 9.900 item còn
+        lại. Lodash chain cũng làm được điều này, nhưng giờ là native.
+      </p>
+      <p>
+        <img
+          src="https://files.f8.edu.vn/f8-prod/blog_posts/13485/section_1_260323080703_69c092375aabc3.16191064.png"
+          alt="anh2"
+        />
+        <br />
+        <em
+          >Lazy evaluation: chỉ xử lý đúng số item cần thiết, tiết kiệm CPU và
+          memory đáng kể</em
+        >
+      </p>
+      <p>
+        <strong>Set Methods</strong> thì đặc biệt hữu ích cho permission systems
+        hoặc dedup realtime data:
+      </p>
+      <div class="tool">
+        <pre>
+                const userRoles = new Set(['admin', 'editor']);
+                const requiredRoles = new Set(['editor', 'viewer']);
+
+                // Kiểm tra overlap
+                const hasAccess = !userRoles.intersection(requiredRoles).size === 0;
+
+                // Chat app: merge messages từ 2 nguồn, không trùng
+                const allMessages = socketMessages.union(cachedMessages);
+
+                // Diff để biết message mới
+                const newMessages = socketMessages.difference(cachedMessages);
+        </pre>
+        <button>Copy</button>
+      </div>
+      <p>Trước đây bạn phải tự viết [...setA].filter(x => setB.has(x)). Dài, khó đọc, dễ bug. Set methods native clean hơn nhiều và chain được với nhau.</p>
+    </div>
+    <hr>
+  </body>
+</html>
