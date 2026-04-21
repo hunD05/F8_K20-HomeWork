@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Theme */
+#light:checked ~ .light {
+    background: #fff8cc;
+    color: #8b5e00;
+}
+
+#light:checked ~ .content .theme-light {
+    background: #fff8cc;
+    color: #111827;
+    font-weight: 500;
+}
+
+#dark:checked ~ .dark {
+    background: #111827;
+    color: #f9fafb;
+}
+
+#dark:checked ~ .content .theme-dark {
+    background: #111827;
+    color: #f9fafb;
+    font-weight: 500;
+}
+
+/* Color */
+#red:checked ~ .red {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+#red:checked ~ .content .color-red {
+    background: #fee2e2;
+    color: #7f1d1d;
+    font-weight: 500;
+}
+
+#blue:checked ~ .blue {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+#blue:checked ~ .content .color-blue {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: 500;
+}
+
+#green:checked ~ .green {
+    background: #dcfce7;
+    color: #166534;
+}
+
+#green:checked ~ .content .color-green {
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 500;
+}
+
+/* Language */
+#vi:checked ~ .vi {
+    background: #bbf7d0;
+    color: #166534;
+}
+
+#vi:checked ~ .content .language-vi {
+    color: #166534;
+    font-weight: 500;
+}
+
+#en:checked ~ .en {
+    background: #bfdbfe;
+    color: #1d4ed8;
+}
+
+#en:checked ~ .content .language-en {
+    color: #1d4ed8;
+    font-weight: 500;
+}
+
+/* Options */
+#adv:checked ~ .adv {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+#adv:checked ~ .content .option-adv {
+    background: #fef3c7;
+    color: #92400e;
+    font-weight: 500;
+}
+
+#eco:checked ~ .eco {
+    background: #bbf7d0;
+    color: #15803d;
+}
+
+#eco:checked ~ .content .option-eco {
+    background: #bbf7d0;
+    color: #166534;
+    font-weight: 500;
+}
+
+#imp:checked ~ .imp {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+#imp:checked ~ .content .option-imp {
+    background: #fee2e2;
+    color: #b91c1c;
+    font-weight: 500;
+}
+
+/* default */
+.content div {
+    color: #9ca3af;
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.container {
+    background: #f9fafb;
+    color: #111827;
+}
+
+.header {
+    background: #f98000;
+    color: #f9fafb;
+    margin-bottom: 12px;
+}
+
+label {
+    background: #eef2ff;
+    color: #4b5563;
+    display: inline-block;
+    margin-right: 16px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+.content {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+input {
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+
+
+

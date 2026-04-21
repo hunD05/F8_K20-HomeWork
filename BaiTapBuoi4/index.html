@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaiTapBuoi4</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Trung tâm cấu hình giao diện (Demo)</h1>
+
+      <div>Chọn giao diện (Theme):</div>
+      <input type="radio" id="light" name="theme" checked/>
+      <label for="light" class="light">Light</label>
+      <input type="radio" id="dark" name="theme" />
+      <label for="dark" class="dark">Dark</label>
+
+      <div>Chọn màu chủ đạo (Color):</div>
+      <input type="radio" id="red" name="color" checked/>
+      <label for="red" class="red">Red</label>
+      <input type="radio" id="blue" name="color" />
+      <label for="blue" class="blue">Blue</label>
+      <input type="radio" id="green" name="color" />
+      <label for="green" class="green">Green</label>
+
+      <div>Chọn ngôn ngữ (Language):</div>
+      <input type="radio" id="vi" name="language" checked/>
+      <label for="vi" class="vi">VI</label>
+      <input type="radio" id="en" name="language" />
+      <label for="en" class="en">EN</label>
+
+      <div>Tùy chọn bổ sung (Options - Checkbox):</div>
+      <input type="checkbox" name="option" id="adv" />
+      <label for="adv" class="adv">Hiển thị mô tả nâng cao</label>
+      <input type="checkbox" name="option" id="eco" />
+      <label for="eco" class="eco">Bật chế độ Eco</label>
+      <input type="checkbox" name="option" id="imp" />
+      <label for="imp" class="imp">Hiển thị cảnh báo quan trọng</label>
+
+      <div class="content">
+        <div class="theme-light">Theme Light: Giao diện sáng, chữ đen</div>
+        <div class="theme-dark">Theme Dark: Giao diện tối, chữ sáng</div>
+
+        <div class="color-red">Màu Red: được nhấn mạnh khi chọn Red</div>
+        <div class="color-blue">Màu Blue: được nhấn mạnh khi chọn Blue</div>
+        <div class="color-green">Màu Green: được nhấn mạnh khi chọn Green</div>
+
+        <div class="language-vi">[VI] Xin chào bạn! Khi chọn VI, dòng này rõ hơn</div>
+        <div class="language-en">[EN] Hello, world! Khi chọn EN, dòng này rõ hơn</div>
+
+        <div class="option-adv">Mô tả nâng cao, giải thích kỹ hơn về cách các lựa chọn đang ảnh hưởng giao diện</div>
+        <div class="option-eco">Chế độ Eco, mô phỏng trạng thái tiết kiệm tài nguyên cho giao diện</div>
+        <div class="option-imp">Cảnh báo quan trọng, khu vực dùng để nhấn mạnh thông tin hệ thống</div>
+      </div>
+
+    </div>
+  </body>
+</html>
