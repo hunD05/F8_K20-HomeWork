@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bài Tập Buổi 5</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 5px;
+      }
+
+      /* 1. Hình vuông */
+      .hv {
+        width: 100px;
+        height: 100px;
+        border: 3px solid orange;
+      }
+
+      /* 2. Hình chữ nhật */
+      .hcn {
+        width: 120px;
+        height: 60px;
+        border: 3px solid blue;
+      }
+
+      /* 3. Tam giác lên */
+      .tgl {
+        width: 0;
+        border-width: 50px;
+        border-style: solid;
+        border-color: transparent transparent green transparent;
+      }
+
+      /* 4. Tam giác xuống */
+      .tgx {
+        width: 0;
+        border-width: 50px;
+        border-style: solid;
+        border-color: orange transparent transparent transparent;
+      }
+
+      /* 5. Tam giác trái */
+      .tgt {
+        width: 0;
+        border-width: 50px;
+        border-style: solid;
+        border-color: transparent purple transparent transparent;
+      }
+
+      /* 6. Tam giác phải */
+      .tgp {
+        width: 0;
+        border-width: 50px;
+        border-style: solid;
+        border-color: transparent transparent transparent brown;
+      }
+
+      /* 7. Hình thang */
+      .ht {
+        width: 100px;
+        border-width: 0 50px 80px 50px;
+        border-style: solid;
+        border-color: transparent transparent teal transparent;
+      }
+
+      /* 8. Tam giác rộng */
+      .tgr {
+        width: 0;
+        border-width: 0 80px 40px 80px;
+        border-style: solid;
+        border-color: transparent transparent gray transparent;
+      }
+
+      /* 9. Tam giác nhọn */
+      .tgn {
+        width: 0;
+        border-width: 0 20px 90px 20px;
+        border-style: solid;
+        border-color: transparent transparent brown transparent;
+      }
+
+      /* 10. Tam giác cân */
+      .tgc {
+        width: 0;
+        border-width: 0 60px 80px 60px;
+        border-style: solid;
+        border-color: transparent transparent red transparent;
+      }
+
+      /* 11. Mũi tên phải */
+      .mtp {
+        width: 0;
+        border-width: 30px 0 30px 60px;
+        border-style: solid;
+        border-color: transparent transparent transparent teal;
+      }
+
+      /* 12. Mũi tên trái */
+      .mtt {
+        width: 0;
+        border-width: 30px 60px 30px 0;
+        border-style: solid;
+        border-color: transparent purple transparent transparent;
+      }
+
+      /* 13. Lá cờ */
+      .flag {
+        width: 120px;
+        height: 50px;
+        border: 3px solid red;
+        background: red;
+      }
+
+      .cut {
+        width: 0;
+        margin-left: 98px;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid white;
+        rotate: calc(180deg);
+      }
+
+      /* 14. F8 */
+      .f8 {
+        display: inline-block;
+      }
+
+      /* chữ F */
+      .f {
+        display: inline-block;
+        width: 20px;
+        height: 100px;
+        background: #e74c3c;
+        margin-right: 50px;
+      }
+
+      .f-top {
+        width: 60px;
+        height: 20px;
+        background: #e74c3c;
+        margin-bottom: 20px;
+      }
+
+      .f-mid {
+        width: 50px;
+        height: 20px;
+        background: #e74c3c;
+      }
+
+      /* số 8 */
+      .eight {
+        display: inline-block;
+        width: 60px;
+        height: 100px;
+        border: 20px solid #e74c3c;
+        box-sizing: border-box;
+      }
+
+      .eight-inner {
+        width: 100%;
+        height: 20px;
+        background: #e74c3c;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="hv"></div>
+      <p>1. Hình vuông</p>
+    </div>
+    <div class="box">
+      <div class="hcn"></div>
+      <p>2. HCN</p>
+    </div>
+    <div class="box">
+      <div class="tgl"></div>
+      <p>3. Tam giác lên</p>
+    </div>
+    <div class="box">
+      <div class="tgx"></div>
+      <p>4. Tam giác xuống</p>
+    </div>
+    <div class="box">
+      <div class="tgt"></div>
+      <p>5. Tam giác trái</p>
+    </div>
+    <div class="box">
+      <div class="tgp"></div>
+      <p>6. Tam giác phải</p>
+    </div>
+    <div class="box">
+      <div class="ht"></div>
+      <p>7. Hình thang</p>
+    </div>
+
+    <div class="box">
+      <div class="tgr"></div>
+      <p>8. Tam giác rộng</p>
+    </div>
+    <div class="box">
+      <div class="tgn"></div>
+      <p>9. Tam giác nhọn</p>
+    </div>
+    <div class="box">
+      <div class="tgc"></div>
+      <p>10. Tam giác cân</p>
+    </div>
+
+    <div class="box">
+      <div class="mtp"></div>
+      <p>11. Mũi tên phải</p>
+    </div>
+    <div class="box">
+      <div class="mtt"></div>
+      <p>12. Mũi tên trái</p>
+    </div>
+
+    <div class="box">
+      <div class="flag"><div class="cut"></div></div>
+      <p>13. Lá cờ</p>
+    </div>
+
+    <div class="box f8">
+      <div class="f">
+        <div class="f-top"></div>
+        <div class="f-mid"></div>
+      </div>
+      <div class="eight">
+        <div class="eight-inner"></div>
+      </div>
+      <p>14. F8</p>
+    </div>
+  </body>
+</html>
