@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio - Dương Mạnh Hùng</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+  </head>
+
+  <body id="top">
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+            alt="Logo F8 Education"
+            width="48"
+            height="48"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="mdi mdi-home"></i>
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/about.html">
+              <i class="mdi mdi-account"></i>
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/skills.html">
+              <i class="mdi mdi-lightbulb"></i>
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/projects.html">
+              <i class="mdi mdi-folder"></i>
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/blog.html">
+              <i class="mdi mdi-post"></i>
+              Blog
+            </a>
+          </li>
+
+          <li>
+            <a href="pages/contact.html">
+              <i class="mdi mdi-contacts"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- TODO: Mobile menu -->
+    </header>
+
+    <!-- Main -->
+    <main class="content-home">
+      <!-- Hero -->
+      <section class="hero-section">
+        <img
+          src="https://picsum.photos/id/237/1200/600"
+          alt="Background portfolio website"
+          width="1200"
+          height="600"
+        />
+
+        <h1>Giới Thiệu Về Bản Thân</h1>
+
+        <p>
+          <strong>Dương Mạnh Hùng</strong>
+        </p>
+
+        <p>
+          <em> Sinh năm 2005. Hiện đang học tập và sinh sống tại Hà Nội. </em>
+        </p>
+
+        <p>
+          Tôi đang học
+          <mark>Frontend Development</mark>
+          và xây dựng các dự án web thực tế.
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-buttons">
+          <a href="pages/projects.html" class="btn"> Xem dự án </a>
+
+          <a href="files/cv.pdf" class="btn" download> Tải CV </a>
+        </div>
+
+        <!-- TODO: Animation -->
+      </section>
+
+      <!-- About -->
+      <section class="about-preview">
+        <h2>Giới Thiệu Ngắn</h2>
+
+        <img
+          src="https://ui-avatars.com/api/?name=Duong+Manh+Hung&size=150"
+          alt="Avatar Dương Mạnh Hùng"
+          width="150"
+          height="150"
+          loading="lazy"
+        />
+
+        <p>
+          Xin chào, tôi là
+          <strong>Dương Mạnh Hùng</strong>. Tôi là người
+          <em>chăm chỉ và luôn học hỏi</em>.
+        </p>
+
+        <p>
+          Hiện tại tôi đang học
+          <abbr title="HyperText Markup Language">HTML</abbr>,
+          <abbr title="Cascading Style Sheets">CSS</abbr>
+          và
+          <abbr title="JavaScript">JS</abbr>.
+        </p>
+
+        <p>
+          Mục tiêu của tôi là trở thành
+          <mark>Frontend Developer</mark>.
+        </p>
+
+        <a href="pages/about.html" class="btn"> Đọc thêm </a>
+      </section>
+
+      <!-- Skills -->
+      <section class="skill-preview">
+        <h2>Kỹ Năng Nổi Bật</h2>
+
+        <div class="skills-list">
+          <!-- Skill -->
+          <article class="skill-item">
+            <i class="mdi mdi-language-html5"></i>
+
+            <h3>HTML</h3>
+
+            <p>Xây dựng cấu trúc website semantic.</p>
+          </article>
+
+          <!-- Skill -->
+          <article class="skill-item">
+            <i class="mdi mdi-language-css3"></i>
+
+            <h3>CSS</h3>
+
+            <p>Thiết kế giao diện responsive.</p>
+          </article>
+
+          <!-- Skill -->
+          <article class="skill-item">
+            <i class="mdi mdi-language-javascript"></i>
+
+            <h3>JavaScript</h3>
+
+            <p>Tạo chức năng tương tác website.</p>
+          </article>
+
+          <!-- Skill -->
+          <article class="skill-item">
+            <i class="mdi mdi-vuejs"></i>
+
+            <h3>Vue.js</h3>
+
+            <p>Xây dựng SPA hiện đại.</p>
+          </article>
+        </div>
+
+        <a href="pages/skills.html" class="btn"> Xem tất cả kỹ năng </a>
+
+        <!-- TODO: Progress bar -->
+      </section>
+
+      <!-- Projects -->
+      <section class="project-preview">
+        <h2>Dự Án Nổi Bật</h2>
+
+        <div class="projects-list">
+          <!-- Project -->
+          <article class="project-item">
+            <img
+              src="https://picsum.photos/300/180?1"
+              alt="Website bán sách online"
+              width="300"
+              height="180"
+              loading="lazy"
+            />
+
+            <div class="content">
+              <h3>
+                <strong>Website Bán Sách</strong>
+              </h3>
+
+              <p>Website bán sách online với giao diện hiện đại.</p>
+
+              <p>
+                Công nghệ:
+                <code>HTML</code>
+                <code>CSS</code>
+                <code>JavaScript</code>
+              </p>
+
+              <a href="pages/projects.html" class="btn"> Xem chi tiết </a>
+            </div>
+          </article>
+
+          <!-- Project -->
+          <article class="project-item">
+            <img
+              src="https://picsum.photos/300/180?2"
+              alt="Portfolio cá nhân"
+              width="300"
+              height="180"
+              loading="lazy"
+            />
+
+            <div class="content">
+              <h3>
+                <strong>Portfolio Cá Nhân</strong>
+              </h3>
+
+              <p>Website giới thiệu kỹ năng và dự án.</p>
+
+              <p>
+                Công nghệ:
+                <code>Vue.js</code>
+                <code>Tailwind CSS</code>
+              </p>
+
+              <a href="pages/projects.html" class="btn"> Xem chi tiết </a>
+            </div>
+          </article>
+
+          <!-- Project -->
+          <article class="project-item">
+            <img
+              src="https://picsum.photos/300/180?3"
+              alt="Ứng dụng quản lý công việc"
+              width="300"
+              height="180"
+              loading="lazy"
+            />
+
+            <div class="content">
+              <h3>
+                <strong>Quản Lý Công Việc</strong>
+              </h3>
+
+              <p>Ứng dụng quản lý công việc dạng todo list.</p>
+
+              <p>
+                Công nghệ:
+                <code>Vue.js</code>
+                <code>Firebase</code>
+              </p>
+
+              <a href="pages/projects.html" class="btn"> Xem chi tiết </a>
+            </div>
+          </article>
+        </div>
+
+        <a href="pages/projects.html" class="btn"> Xem tất cả dự án </a>
+
+        <!-- TODO: Filter dự án -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Copyright -->
+      <p>
+        <small> © 2026 Dương Mạnh Hùng. All Rights Reserved. </small>
+      </p>
+
+      <!-- Quote -->
+      <blockquote>
+        "Stay hungry, stay foolish."
+        <cite>- Steve Jobs</cite>
+      </blockquote>
+
+      <!-- Contact -->
+      <address>
+        Email:
+        <a href="mailto:hungdm106@gmail.com"> hungdm106@gmail.com </a>
+
+        <br />
+
+        Phone:
+        <a href="tel:+84345512856"> +84 345 128 56 </a>
+      </address>
+
+      <!-- Social -->
+      <div class="social-links">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="mdi mdi-facebook"></i>
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="mdi mdi-instagram"></i>
+        </a>
+
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <i class="mdi mdi-twitter"></i>
+        </a>
+
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+        >
+          <i class="mdi mdi-github"></i>
+        </a>
+
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="mdi mdi-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Keyboard -->
+      <p>
+        Nhấn
+        <kbd>Ctrl</kbd> +
+        <kbd>S</kbd>
+        để lưu trang.
+      </p>
+
+      <!-- Output -->
+      <p>
+        Output:
+        <samp>Portfolio loaded successfully.</samp>
+      </p>
+
+      <!-- Top -->
+      <a href="#top" class="top-link">Lên đầu trang </a>
+
+      <!-- TODO: Dark mode -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

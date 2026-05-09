@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+  </head>
+
+  <body id="top">
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="https://files.fullstack.edu.vn/f8-prod/organization-logos/694743c405102.png"
+            alt="Logo F8"
+            width="48"
+            height="48"
+          />
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <i class="mdi mdi-home"></i>
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html">
+              <i class="mdi mdi-account"></i>
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="skills.html">
+              <i class="mdi mdi-lightbulb"></i>
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a href="projects.html">
+              <i class="mdi mdi-folder"></i>
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a href="blog.html">
+              <i class="mdi mdi-post"></i>
+              Blog
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              <i class="mdi mdi-contacts"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- TODO: Mobile menu -->
+    </header>
+
+    <!-- Main -->
+    <main class="content-blog">
+      <!-- Blog Header -->
+      <section class="blog-header">
+        <h1>Hành Trình Học Lập Trình Frontend Từ Con Số 0</h1>
+
+        <p>
+          Ngày đăng:
+          <time datetime="2026-05-10"> 10/05/2026 </time>
+        </p>
+
+        <p>
+          Tác giả:
+          <strong>Dương Mạnh Hùng</strong>
+        </p>
+
+        <!-- Cover -->
+        <img
+          src="https://picsum.photos/1000/400"
+          alt="Ảnh cover blog lập trình frontend"
+          width="1000"
+          height="400"
+        />
+      </section>
+
+      <!-- Table Of Contents -->
+      <nav class="toc" aria-label="Table of Contents">
+        <h2>Mục Lục</h2>
+
+        <ul>
+          <li>
+            <a href="#intro"> Giới thiệu </a>
+          </li>
+
+          <li>
+            <a href="#journey"> Hành trình học lập trình </a>
+          </li>
+
+          <li>
+            <a href="#code-example"> Code Examples </a>
+          </li>
+
+          <li>
+            <a href="#references"> Tài liệu tham khảo </a>
+          </li>
+
+          <li>
+            <a href="#author"> Thông tin tác giả </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Intro -->
+      <section id="intro">
+        <h2>Giới Thiệu</h2>
+
+        <p>
+          Lập trình frontend là một trong những lĩnh vực phổ biến nhất trong
+          ngành công nghệ hiện nay.
+        </p>
+
+        <p>
+          Để xây dựng giao diện web, chúng ta thường bắt đầu với
+          <strong>HTML</strong>,
+          <strong>CSS</strong>
+          và
+          <strong>JavaScript</strong>.
+        </p>
+
+        <p>
+          Ban đầu việc học có thể khá khó khăn nhưng nếu kiên trì luyện tập mỗi
+          ngày, bạn sẽ dần hiểu cách hoạt động của website.
+        </p>
+
+        <p>
+          Một trong những điều quan trọng nhất là phải
+          <mark>thực hành thường xuyên</mark>.
+        </p>
+
+        <p>
+          Chỉ học lý thuyết mà không làm dự án thực tế sẽ khiến bạn khó tiến bộ.
+        </p>
+      </section>
+
+      <!-- Journey -->
+      <section id="journey">
+        <h2>Hành Trình Học Lập Trình</h2>
+
+        <p>
+          Khi mới bắt đầu, tôi thường sử dụng
+          <code>console.log()</code>
+          để kiểm tra dữ liệu trong JavaScript.
+        </p>
+
+        <p>
+          Ngoài ra, việc ghi nhớ các phím tắt như
+          <kbd>Ctrl</kbd> +
+          <kbd>S</kbd>
+          giúp tiết kiệm rất nhiều thời gian khi code.
+        </p>
+
+        <p>Sau khi chạy chương trình, kết quả hiển thị có thể như sau:</p>
+
+        <p>
+          <samp>Hello World</samp>
+        </p>
+
+        <!-- Quote -->
+        <blockquote>
+          "Programs must be written for people to read, and only incidentally
+          for machines to execute."
+          <cite>- Harold Abelson</cite>
+        </blockquote>
+
+        <p>
+          Điều tôi học được là việc viết code sạch và dễ đọc quan trọng không
+          kém việc code chạy đúng.
+        </p>
+      </section>
+
+      <!-- Code Examples -->
+      <section id="code-example">
+        <h2>Code Examples</h2>
+
+        <!-- HTML -->
+        <h3>Ví dụ HTML</h3>
+
+        <pre><code>&lt;!-- Tạo nút button --&gt;
+&lt;button&gt;
+  Click Me
+&lt;/button&gt;
+</code></pre>
+
+        <!-- JavaScript -->
+        <h3>Ví dụ JavaScript</h3>
+
+        <pre><code>// Hàm hiển thị thông báo
+function hello(){
+
+  // In ra console
+  console.log("Hello World");
+
+}
+
+// Gọi hàm
+hello();
+</code></pre>
+
+        <!-- CSS -->
+        <h3>Ví dụ CSS</h3>
+
+        <pre><code>/* Style cho button */
+button{
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+</code></pre>
+      </section>
+
+      <!-- References -->
+      <section id="references">
+        <h2>Tài Liệu Tham Khảo</h2>
+
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <cite>MDN Web Docs</cite>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.w3schools.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <cite>W3Schools</cite>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://javascript.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <cite>JavaScript.info</cite>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Author -->
+      <section id="author">
+        <h2>Thông Tin Tác Giả</h2>
+
+        <div class="author-box">
+          <!-- Avatar -->
+          <img
+            src="https://picsum.photos/200"
+            alt="Avatar Dương Mạnh Hùng"
+            width="200"
+            height="200"
+            loading="lazy"
+          />
+
+          <div>
+            <h3>Dương Mạnh Hùng</h3>
+
+            <p>
+              Frontend Developer đang học tập và phát triển kỹ năng lập trình
+              web hiện đại.
+            </p>
+
+            <address>
+              Email:
+              <a href="mailto:hung@example.com"> hung@example.com </a>
+
+              <br />
+
+              Facebook:
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                facebook.com/hungdev
+              </a>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Copyright -->
+      <p>
+        <small> © 2026 Dương Mạnh Hùng. All Rights Reserved. </small>
+      </p>
+
+      <!-- Quote -->
+      <blockquote>
+        "Stay hungry, stay foolish."
+        <cite>- Steve Jobs</cite>
+      </blockquote>
+
+      <!-- Contact -->
+      <address>
+        Email:
+        <a href="mailto:hungdm106@gmail.com"> hungdm106@gmail.com </a>
+
+        <br />
+
+        Phone:
+        <a href="tel:+84345512856"> +84 345 128 56 </a>
+      </address>
+
+      <!-- Social -->
+      <div class="social-links">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i class="mdi mdi-facebook"></i>
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="mdi mdi-instagram"></i>
+        </a>
+
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Twitter"
+        >
+          <i class="mdi mdi-twitter"></i>
+        </a>
+
+        <a
+          href="https://github.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Github"
+        >
+          <i class="mdi mdi-github"></i>
+        </a>
+
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="mdi mdi-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Keyboard -->
+      <p>
+        Nhấn
+        <kbd>Ctrl</kbd> +
+        <kbd>S</kbd>
+        để lưu trang.
+      </p>
+
+      <!-- Output -->
+      <p>
+        Output:
+        <samp>Portfolio loaded successfully.</samp>
+      </p>
+
+      <!-- Top -->
+      <a href="#top" class="top-link">Lên đầu trang </a>
+
+      <!-- TODO: Dark mode -->
+    </footer>
+  </body>
+</html>
